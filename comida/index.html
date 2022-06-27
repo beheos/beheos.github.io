@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Food</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__nav">
+                <div class="container__logo">
+                    <h2>Comida Rapida</h2>
+                </div>
+                <div>
+                    <ul>
+                        <li class="submenu">
+                            <img src="images/carrito.svg" alt="" class="boton__carrito">
+                            <div class="carrito" id="div__carrito">
+                                <p class="carrito__vacio">Carrito Vacio</p>
+                                <div class="carrito__contenedor">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Nombre</th>
+                                            <th>Opciones</th>
+                                            <th>Cantidad</th>
+                                            <th>Precio</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="table__carrito">
+                                        <template id="template__pedidos">
+                                            <tr>
+                                                <td><img src="" alt="" class="submenu__img"></td>
+                                                <td></td>
+                                                <td><a href="#" class="opciones__alimento"><img src="images/plus.svg" alt="" class="table__img table__agregar"></a>
+                                                    <a href="#" class="opciones__alimento"><img src="images/trash.svg" alt="" class="table__img table__eliminar"></a>
+                                                </td>
+                                                <td></td>
+                                                <td>$<span></span></td>
+                                            </tr>
+                                    </template>
+                                    </tbody>
+                                    <tfoot id="table__footer">
+                                        <template id=template__footer>
+                                            <tr>
+                                                <td colspan="5">Total: $<span></span></td>
+                                            </tr>
+                                        </template>
+                                    </tfoot>
+                                </table>
+                                <a href="#" class="btn btn--pedido">Realizar Pedido</a>
+                                <a href="#" class="btn vaciar__carrito">Vaciar Carrito</a>
+                            </div>
+                            </div>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="hero__text">
+            <h1>Comida Rapida</h1>
+            <p class="hero__parrafo">Tu comida favorita siempre a donde tu vayas</p>
+        </div>
+    </div>
+
+    <main>
+        <section class="food-cards container" id="food-cards">
+        </section>
+        <template id="food__card">
+            <div class="food__card">
+                <figure class="food__figure">
+                    <img src="" alt="" class="food__img">
+                </figure>
+                <div class="card__container">
+                    <h2 class="card__name"></h2>
+                    <div class="card__text">
+                        <p class="card__ingrediente"></p>
+                        <p class="">$<span class="card__precio"></span></p>
+                    </div>
+                    <a href="#" class="card__button">Pedir</a>
+                </div>
+            </div>
+        </template>
+    </main>
+    <footer>
+        <div class="footer__container">
+            <div class="footer__datos">
+                <ul>
+                    <li>Calle Palafox y Mendoza n° 2 Col. Centro</li>
+                    <li>Tel: 2222156789</li>
+                    <li>atencion@comidarapida.com</li>
+                </ul>
+            </div>
+            <div class="footer__logo">
+                <p>Comida Rapida</p>
+            </div>
+            <div class="footer__redes">
+                <a href="#" class="footer__icon fab fa-twitter"></a>
+                <a href="#" class="footer__icon fab fa-facebook-f"></a>
+                <a href="#" class="footer__icon fab fa-instagram"></a>
+            </div>
+        </div>
+        <div class="footer__copy">
+            <p class="footer__parrafo">
+                Todos los derechos &copy; Oscar Bello
+            </p>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/f955c68031.js" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
