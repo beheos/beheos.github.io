@@ -1,0 +1,122 @@
+[
+    {
+        "id":1,
+        "imagen":"img/olimpicos.jpg",
+        "pregunta":"¿En qué país iniciaron los juegos olímpicos?",
+        "respuesta":"Grecia",
+        "opciones": [
+            "Inglaterra",
+            "Francia",
+            "Grecia",
+            "Estados unidos"
+        ]
+    },
+    {
+        "id":2,
+        "imagen":"img/segunda.jpg",
+        "pregunta":"¿En qué año terminó la segunda guerra mundial?",
+        "respuesta":"1945",
+        "opciones": [
+            "1945",
+            "1939",
+            "1946",
+            "1914"
+        ]
+    },
+    {
+        "id":3,
+        "imagen":"img/cristobal.jpg",
+        "pregunta":"¿En qué año llego Cristóbal Colón a América?",
+        "respuesta":"1492",
+        "opciones": [
+            "1512",
+            "1492",
+            "1500",
+            "1783"
+        ]
+    },
+    {
+        "id":4,
+        "imagen":"img/bota.jpg",
+        "pregunta":"¿Que país tiene forma de bota?",
+        "respuesta":"Italia",
+        "opciones": [
+            "España",
+            "Francia",
+            "Alemania",
+            "Italia"
+        ]
+    },
+    {
+        "id":5,
+        "imagen":"img/messi.jpg",
+        "pregunta":"¿De qué país es Originario Lionel Messi?",
+        "respuesta":"Argentina",
+        "opciones": [
+            "Argentina",
+            "México",
+            "España",
+            "Italia"
+        ]
+    },
+    {
+        "id":6,
+        "imagen":"img/triangulo.jpg",
+        "pregunta":"¿Como se llama el triángulo con sus 3 lados iguales?",
+        "respuesta":"Equilátero",
+        "opciones": [
+            "Equilátero",
+            "Triángulo Rectángulo",
+            "Isósceles",
+            "Escaleno"
+        ]
+    },
+    {
+        "id":7,
+        "imagen":"img/rocky.jpg",
+        "pregunta":"¿Personaje antagonista en Rocky IV?",
+        "respuesta":"Iván Drago",
+        "opciones": [
+            "Apollo Creed",
+            "Clubber Lang",
+            "Iván Drago",
+            "Tommy"
+        ]
+    },
+    {
+        "id":8,
+        "imagen":"img/cambridge.jpg",
+        "pregunta":"¿Donde se encuentra la Universidad de Cambridge?",
+        "respuesta":"Reino Unido",
+        "opciones": [
+            "Alemania",
+            "Francia",
+            "Estados Unidos",
+            "Reino Unido"
+        ]
+    },
+    {
+        "id":9,
+        "imagen":"img/mundial.jpg",
+        "pregunta":"¿Que selección de futbol ganó el mundial de Rusia 2018?",
+        "respuesta":"Francia",
+        "opciones": [
+            "Alemania",
+            "Brasil",
+            "Francia",
+            "España"
+        ]
+    },
+    {
+        "id":10,
+        "imagen":"img/facebook.jpg",
+        "pregunta":"¿Como se llama el fundador de Facebook?",
+        "respuesta":"Mark Zuckerberg",
+        "opciones": [
+            "Elon Musk",
+            "Mark Zuckerberg",
+            "Jeff Bezos",
+            "Steve Jobs"
+        ]
+    }
+]

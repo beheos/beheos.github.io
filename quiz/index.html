@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/37ff733bc3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <button class="start-quiz-btn">Iniciar</button>
+    <div class="container">
+        <div class="top-bar">
+            <div class="question-counter">
+                <!-- Barra de conteo -->
+            </div>
+            <div class="timer">
+                <span><i class="fa-regular fa-clock">&nbsp;</i></span>
+                <span class="time-left">10</span>
+            </div>
+            <div class="time_line"></div>
+        </div>
+
+        <figure class="ques-figure">
+            <!-- insertan las imagenes -->
+            <!-- <img src="img/bota.jpg" class="ques_img" alt=""> -->
+        </figure>
+
+        <div class="ques-text">
+            <!-- insertan las preguntas -->
+        </div>
+
+        <div class="option-div">
+            <!-- se insertan la opciones -->
+        </div>
+
+        <button class="next-ques-btn click-disable">Siguiente</button>
+    </div>
+
+    <div class="result-div">
+        <i class="fa-solid fa-crown"></i>
+        <span>Completaste el Quiz!</span>
+        <div class="score">
+            <!-- inserta el puntaje -->
+        </div>
+        <button class="replay-quiz-btn" onclick="location.reload()">Iniciar Nuevamente</button>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
