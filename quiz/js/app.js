@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 })
 
 const obtenerDatos = async () =>{
-    const preguntas = await fetch('../preguntas.json')
+    const preguntas = await fetch('../quiz/preguntas.json')
     const data = await preguntas.json() 
     questions = data
 }
