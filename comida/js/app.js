@@ -1,3 +1,4 @@
+import {contadorProductos} from './contador.js'
 const template__card = document.getElementById('food__card').content
 const template__pedidos = document.getElementById('template__pedidos').content
 const template__footer = document.getElementById('template__footer').content
@@ -11,21 +12,19 @@ const url = "../comida/alimentos.json"
 let carrito = {}
 const carrito__contenedor = document.querySelector('.carrito__contenedor')
 const carrito__vacio = document.querySelector('.carrito__vacio')
-// const carrito__vacio = document.querySelector('.btn--vacio')
 const boton__carrito = document.querySelector('.boton__carrito')
 const nav__carrito = document.querySelector('#div__carrito')
 const btnPedido = document.querySelector('.btn--pedido')
-
-
 
 document.addEventListener('DOMContentLoaded', ()=>{
     traerAlimnetos()
     if(localStorage.getItem('carrito')){
         carrito = JSON.parse(localStorage.getItem('carrito'))
+        let cantidadTotal = localStorage.getItem('cantidadTotal')
+        mostrarIndiceCarrito(cantidadTotal)
         return mostrarCarrito()
     }
     mostrarElementos()
-
 })
 
 const traerAlimnetos = async () =>{
@@ -48,7 +47,6 @@ const mostrarAlimentos = alimentos => {
 }
 
 boton__carrito.addEventListener('click', (e)=>{
-    console.log(e.target)
     if(nav__carrito.classList.contains('carrito--active')){
         nav__carrito.classList.remove('carrito--active')
     }else{
@@ -64,20 +62,18 @@ contenedorAlimentos.addEventListener('click', (e) =>{
 
 table__carrito.addEventListener('click', (e)=> {
     acciones(e)
-    e.preventDefault()
-    
+    e.preventDefault()  
 })
 
 btnPedido.addEventListener('click', () =>{
     let pedido = false
-    pedido = confirm("No podra cancelar su pedio al aceptar ¿Esta seguro de su selección?")
+    pedido = confirm("No podrá cancelar su pedio al aceptar ¿Está seguro de su selección?")
     if(pedido){
         alert("Pedido realizado")
         carrito = {}
     }
     mostrarCarrito()
 })
-
 
 const agregarCarrito = (e) => {
     if(e.target.classList.contains('card__button')){
@@ -93,12 +89,11 @@ const setCarrito = objeto => {
         titulo : objeto.querySelector('.card__name').textContent,
         precio : objeto.querySelector('.card__precio').textContent,
         cantidad : 1
-    }
-    
+    }  
     if(carrito.hasOwnProperty(comida.id)){
         comida.cantidad = carrito[comida.id].cantidad + 1
     }
-     carrito[comida.id] = {...comida}
+    carrito[comida.id] = {...comida}
      mostrarCarrito()
 }
 
@@ -117,29 +112,24 @@ const mostrarCarrito = () => {
     table__carrito.appendChild(fragmet)
     mostrarElementos()
     mostrarFooter()
+    let cantidadTotal = contadorProductos(carrito)
+    mostrarIndiceCarrito(cantidadTotal)
+    localStorage.setItem('cantidadTotal', cantidadTotal)
     localStorage.setItem('carrito', JSON.stringify(carrito))
 }
 
 const mostrarFooter = () => {
     table__footer.innerHTML = ''
     const clone = template__footer.cloneNode(true)
-    // if(Object.keys(carrito).length === 0){
-    //     table__carrito.innerHTML = ` <p class="carrito__vacio">Carrito Vacio</p>`
-    //     return
-    // }
-
     const nPrecio = Object.values(carrito).reduce((acc, {cantidad, precio}) => acc + cantidad * precio, 0)
-
     clone.querySelector('span').textContent = nPrecio
     fragmet.appendChild(clone)
     table__footer.appendChild(fragmet)
-
     const btnVaciar = document.querySelector('.vaciar__carrito')
     btnVaciar.addEventListener('click', () =>{
         carrito = {}
         mostrarCarrito()
-    })
-    
+    })   
 }
 
 const acciones = e => {
@@ -149,7 +139,6 @@ const acciones = e => {
         carrito[e.target.dataset.id] = {...alimento}
         mostrarCarrito()
     }
-
     if(e.target.classList.contains('table__eliminar')){
         const alimento = carrito[e.target.dataset.id]
         alimento.cantidad--
@@ -158,11 +147,22 @@ const acciones = e => {
         }
         mostrarCarrito()
     }
-
     e.stopPropagation()
 }
 
 const mostrarElementos = () => {
     Object.keys(carrito).length === 0 ? carrito__vacio.style.display = 'block' :  carrito__vacio.style.display = 'none'
     Object.keys(carrito).length === 0 ? carrito__contenedor.style.display = 'none' : carrito__contenedor.style.display = 'block' 
+}
+
+const mostrarIndiceCarrito = (cantidadTotal=0) => {
+    indice.innerHTML = ''
+    if(cantidadTotal > 0){
+        indice.classList.add('indice-active')
+        indice.innerHTML = cantidadTotal
+    }else{
+        if( indice.classList.contains('indice-active')){
+            indice.classList.remove('indice-active')
+        }
+    } 
 }

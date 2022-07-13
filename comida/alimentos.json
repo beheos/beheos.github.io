@@ -2,76 +2,76 @@
     {   "id":1,
         "imagen":"images/h1.jpg",
         "titulo":"Suprema",
-        "ingredientes":"250gr carne, tomate, pimiento, tocino, champiñon",
+        "ingredientes":"250gr carne, tomate, pimiento, tocino, champiñón",
         "precio":90
     },
     {   "id":2,
         "imagen":"images/h2.jpg",
         "titulo":"Big",
-        "ingredientes":"250gr carne, tomate, pimiento, tocino, champiñon",
+        "ingredientes":"250gr carne, tomate, pimiento, tocino, champiñón",
         "precio": 80
     },
     {
         "id":3,
         "imagen":"images/h3.jpg",
         "titulo":"1/4 de Libra",
-        "ingredientes":"250gr carne, tomate, pimiento, tocino, champiñon",
+        "ingredientes":"250gr carne, tomate, pimiento, tocino, champiñón",
         "precio":100
     },
     {
         "id":4,
         "imagen":"images/h4.jpg",
         "titulo":"Sencilla",
-        "ingredientes":"250gr carne, tomate, pimiento, tocino, champiñon",
+        "ingredientes":"250gr carne, tomate, pimiento, tocino, champiñón",
         "precio":60
     },
     {
         "id":5,
         "imagen":"images/h5.jpg",
         "titulo":"Argentina",
-        "ingredientes":"250gr carne, tomate, pimiento, tocino, champiñon",
+        "ingredientes":"250gr carne, tomate, pimiento, tocino, champiñón",
         "precio":75
     },
     {   "id":6,
         "imagen":"images/hd1.jpg",
         "titulo":"Tradicional",
-        "ingredientes":"250gr carne, tomate, pimiento, tocino, champiñon",
+        "ingredientes":"250gr carne, tomate, pimiento, tocino, champiñón",
         "precio":50
     },
     {   "id":7,
         "imagen":"images/hd2.jpg",
         "titulo":"Jocho",
-        "ingredientes":"250gr carne, tomate, pimiento, tocino, champiñon",
+        "ingredientes":"250gr carne, tomate, pimiento, tocino, champiñón",
         "precio":40
     },
     {   "id":8,
         "imagen":"images/p1.jpg",
         "titulo":"Familiar",
-        "ingredientes":"piña, frijoles, queso, tomate, champiñon",
+        "ingredientes":"piña, frijoles, queso, tomate, champiñón",
         "precio":120
     },
     {   "id":9,
         "imagen":"images/p2.jpg",
         "titulo":"Mexicana",
-        "ingredientes":"piña, frijoles, queso, tomate, champiñon",
+        "ingredientes":"piña, frijoles, queso, tomate, champiñón",
         "precio":150
     },
     {   "id":10,
         "imagen":"images/p3.jpg",
         "titulo":"Española",
-        "ingredientes":"piña, frijoles, queso, tomate, champiñon",
+        "ingredientes":"piña, frijoles, queso, tomate, champiñón",
         "precio":130
     },
     {   "id":11,
         "imagen":"images/p4.jpg",
         "titulo":"Argentina",
-        "ingredientes":"piña, frijoles, queso, tomate, champiñon",
+        "ingredientes":"piña, frijoles, queso, tomate, champiñón",
         "precio":140
     },
     {   "id":12,
         "imagen":"images/p5.jpg",
         "titulo":"Española",
-        "ingredientes":"piña, frijoles, queso, tomate, champiñon",
+        "ingredientes":"piña, frijoles, queso, tomate, champiñón",
         "precio":140
     }
 ]

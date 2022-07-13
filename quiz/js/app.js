@@ -12,7 +12,7 @@ let play_again_btn = document.querySelector('.replay-quiz-btn')
 let questions = {}
 let correctIcon = ' <div class="icon correct-icon"><i class="fa-solid fa-check"</i></div>'
 let incorrectIcon = ' <div class="icon wrong-icon"><i class="fa-solid fa-xmark"</i></div>'
-
+const url = '../quiz/preguntas.json'
 let question_count = 0
 let ques_number = 1
 let timeValue = 10
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 })
 
 const obtenerDatos = async () =>{
-    const preguntas = await fetch('../quiz/preguntas.json')
+    const preguntas = await fetch(url)
     const data = await preguntas.json() 
     questions = data
 }

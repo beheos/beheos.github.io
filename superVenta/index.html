@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Store</title>
+</head>
+<body>
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-warning">
+            <div class="container-fluid">
+              <a class="navbar-brand font-weight-light text-primary" href="index.html">SúperVenta</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#inicio">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#contenedorProductos">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#contacto">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <button class="nav-link text-light btn btn-primary p-2" id="compras">Carrito
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z">
+                      </path>
+                    </svg>
+                    <sup class="indice" id="indice"></sup>
+                    </button>
+                  </li>
+                </ul>
+                <form id="busqueda" class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Búsqueda" aria-label="Search">
+                  <button type="submit" class="btn btn-outline-primary" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!-- slider -->
+    <section class="container mt-3" id="inicio">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/img1.jpg" class="d-block w-100" alt="img1">
+              </div>
+              <div class="carousel-item">
+                <img src="img/img2.jpg" class="d-block w-100" alt="img2">
+              </div>
+              <div class="carousel-item">
+                <img src="img/img3.jpg" class="d-block w-100" alt="img3">
+              </div>
+              <div class="carousel-item">
+                <img src="img/img4.jpg" class="d-block w-100" alt="img4">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="container" id="seccion_productos">
+        <div class="row" id="contenedorProductos">
+            <!-- se insertan las cards -->
+        </div>
+    </section>
+    
+    <footer class="container-fluid" id="contacto">
+      <div class="row  p-5 pb-2 text-white">
+          <div class="mx-auto col-xs-12 col-md-6 col-lg-3">
+              <p class="h1">SúperVenta</p>
+          </div>
+          <div class="mx-auto col-xs-12 col-md-6 col-lg-3">
+              <p class="h5 mb-3">Productos</p>
+              <div class="mb-2">
+                  <a href="#" class="text-white text-decoration-none">Dama</a>
+              </div>
+              <div class="mb-2">
+                  <a href="#" class="text-white text-decoration-none">Caballero</a>
+              </div>
+              <div class="mb-2">
+                  <a href="#" class="text-white text-decoration-none">Niños</a>
+              </div>
+              <div class="mb-2">
+                  <a href="#" class="text-white text-decoration-none">Joyería</a>
+              </div>
+              <div class="mb-2">
+                  <a href="#" class="text-white text-decoration-none">Línea Blanca</a>
+              </div>
+              <div class="mb-2">
+                  <a href="#" class="text-white text-decoration-none">Más</a>
+              </div>
+           </div>
+          <div class="mx-auto col-xs-12 col-md-6 col-lg-3">
+              <p class="h5 mb-3">Links</p>
+              <div class="mb-2">
+                  <a href="#" class="text-white text-decoration-none">Facebook</a>
+              </div>
+              <div class="mb-2">
+                  <a href="#" class="text-white text-decoration-none">Instagram</a>
+              </div>
+              <div class="mb-2">
+                  <a href="#" class="text-white text-decoration-none">YouTube</a>
+              </div>
+          </div>
+          <div class="col-xs-12 pt-4">
+              <p class="text-secondary text-center">Todos los derechos Reservados</p>
+          </div>
+      </div>
+  </footer>
+    <template id="templateProductos">
+        <div class="col">
+            <div class="card shadow mt-5 p-3 overflow-hidden" style="width: 20rem; height: 35rem;">
+              <figure>
+                <img src="" class="card-img-top bg-body" style="width: 200px; height: 200px;">
+              </figure>
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <p class="card-text font-weight-bold text-center h4 text-danger">$<span class="price"></span></p>
+                  <p class="card-text description"></p>
+                  <a href="#" class="btn btn-warning">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <script src="js/app.js" type="module"></script>
+    <script src="js/loader.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
