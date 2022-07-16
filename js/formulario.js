@@ -30,7 +30,9 @@ function validarformulario (){
         mostraralerta("Campo Obligatorio");
         return false;
     }else{
-        var expresion = /^\w+([\.-]?w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
+        debugger
+        // var expresion = /^\w+([\.-]?w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
+        var expresion = /^(([^<>()\[\]\.,;:\s@\”]+(\.[^<>()\[\]\.,;:\s@\”]+)*)|(\”.+\”))@(([^<>()[\]\.,;:\s@\”]+\.)+[^<>()[\]\.,;:\s@\”]{2,})$/
         if(!expresion.test(correo)){
             validacioncolor("correo");
             mostraralerta("Por favor ingrese un correo valido");

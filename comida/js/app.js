@@ -18,9 +18,9 @@ const btnPedido = document.querySelector('.btn--pedido')
 
 document.addEventListener('DOMContentLoaded', ()=>{
     traerAlimnetos()
-    if(localStorage.getItem('carrito')){
-        carrito = JSON.parse(localStorage.getItem('carrito'))
-        let cantidadTotal = localStorage.getItem('cantidadTotal')
+    if(localStorage.getItem('carrito_comida')){
+        carrito = JSON.parse(localStorage.getItem('carrito_comida'))
+        let cantidadTotal = localStorage.getItem('cantidadTotal_comida')
         mostrarIndiceCarrito(cantidadTotal)
         return mostrarCarrito()
     }
@@ -114,8 +114,8 @@ const mostrarCarrito = () => {
     mostrarFooter()
     let cantidadTotal = contadorProductos(carrito)
     mostrarIndiceCarrito(cantidadTotal)
-    localStorage.setItem('cantidadTotal', cantidadTotal)
-    localStorage.setItem('carrito', JSON.stringify(carrito))
+    localStorage.setItem('cantidadTotal_comida', cantidadTotal)
+    localStorage.setItem('carrito_comida', JSON.stringify(carrito))
 }
 
 const mostrarFooter = () => {
