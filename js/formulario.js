@@ -17,7 +17,8 @@ function validarformulario (){
         mostraralerta("Campo Obligatorio");
         return false;
     }else{
-        var expresion = /^[a-zA-ZñÑáéíóúÁÉÍÓÚ]*$/;
+        //se agrega nueva validacion
+        var expresion = /^[,\\.\\a-zA-Z0-9ñÑáéíóúÁÉÍÓÚ ]*$/;
         if(!expresion.test(nombre)){
             validacioncolor("nombre");
             mostraralerta("No se permiten caracteres espceiales o numeros");
